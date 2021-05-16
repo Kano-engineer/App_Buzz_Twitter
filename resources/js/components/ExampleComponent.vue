@@ -6,7 +6,7 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        {{ message }}
                     </div>
                 </div>
             </div>
@@ -14,10 +14,19 @@
     </div>
 </template>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     export default {
         mounted() {
             console.log('Component mounted.')
         }
     }
+    
+    const vm = new Vue({
+    el: "#app",
+    data: {
+      message: "Hello Vue.js!!",
+    },
+    });
+
 </script>
