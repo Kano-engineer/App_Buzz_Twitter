@@ -5,14 +5,25 @@
                 <div class="card">
                     <div class="card-header">Example Component</div>
 
-                    <div class="card-body">
-                        {{ message }}
+                    <div id="app">
+                    {{ message }}
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+#app {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30% auto;
+    color: #41BA83;
+}
+</style>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
@@ -21,7 +32,7 @@
             console.log('Component mounted.')
         }
     }
-    
+
     const vm = new Vue({
     el: "#app",
     data: {
